@@ -19,6 +19,7 @@
                         <E-5GC-8-PF-UserPlane-vs-Xn-HO-Decoupling pt:datatype="severity">Sev 3 - Minor</E-5GC-8-PF-UserPlane-vs-Xn-HO-Decoupling>
                         <E-5GC-9-PF-N3-N6_Stateless_Throughput-IPv6 pt:datatype="severity">Sev 3 - Minor</E-5GC-9-PF-N3-N6_Stateless_Throughput-IPv6>
                         <E-5GC-10-PF-UserPlane-vs-N2-HO-Decoupling pt:datatype="severity">Sev 3 - Minor</E-5GC-10-PF-UserPlane-vs-N2-HO-Decoupling>
+                        <TestSUTLib pt:datatype="severity">Sev 2 - Major</TestSUTLib>
                     </test_case_severity>
                     <default_severity pt:datatype="severity">Sev 3 - Minor</default_severity>
                 </parameters>
@@ -55,6 +56,14 @@
                         <body>tc = info(&apos;testCaseName&apos;,&apos;main&apos;)</body>
                     </command>
                     <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="c2857700-74f1-4d7f-a973-5d1a36798a5f" action="message" useFieldsInCommand="false">
+                    <command>
+                        <body>Information: Test case found: [tc]</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.execution.builtin.exec.MessagePropertyGroup">
+                        <message inherit="false"> Test case found: [tc]</message>
+                    </applicationProperties>
                 </item>
                 <item guid="a04cf53e-7295-4035-a29a-2a9beb54b5a0" action="eval" useFieldsInCommand="false">
                     <command>
