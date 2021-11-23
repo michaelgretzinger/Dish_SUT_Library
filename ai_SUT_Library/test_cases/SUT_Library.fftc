@@ -9,12 +9,16 @@
             <parameters escape="true">
                 <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
                     <test_case_severity>
-                        <E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 1 - Critical</E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE>
-                        <SUT_Library pt:datatype="severity">Sev 1 - Critical</SUT_Library>
-                        <E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 1 - Critical</E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE>
-                        <E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 1 - Critical</E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE>
-                        <E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 1 - Critical</E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE>
-                        <E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 1 - Critical</E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE>
+                        <E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 3 - Minor</E-5GC-1-CP-PDU_Session_Establishment-1_PDU_per_UE>
+                        <E-5GC-2-PF-PDU_Session_Establishment-1_PDU_per_UE pt:datatype="severity">Sev 3 - Minor</E-5GC-2-PF-PDU_Session_Establishment-1_PDU_per_UE>
+                        <E-5GC-3-CP-PDU_Session_Establishment-3_PDU_per_UE pt:datatype="severity">Sev 3 - Minor</E-5GC-3-CP-PDU_Session_Establishment-3_PDU_per_UE>
+                        <E-5GC-4-PF-PDU_Session_Establishment-3_PDU_per_UE pt:datatype="severity">Sev 3 - Minor</E-5GC-4-PF-PDU_Session_Establishment-3_PDU_per_UE>
+                        <E-5GC-5-PF-N3-N6_Stateless_Throughput-IPv4 pt:datatype="severity">Sev 3 - Minor</E-5GC-5-PF-N3-N6_Stateless_Throughput-IPv4>
+                        <E-5GC-6-PF-Services_Data pt:datatype="severity">Sev 3 - Minor</E-5GC-6-PF-Services_Data>
+                        <E-5GC-7-PF-Services_Voice-Data pt:datatype="severity">Sev 3 - Minor</E-5GC-7-PF-Services_Voice-Data>
+                        <E-5GC-8-PF-UserPlane-vs-Xn-HO-Decoupling pt:datatype="severity">Sev 3 - Minor</E-5GC-8-PF-UserPlane-vs-Xn-HO-Decoupling>
+                        <E-5GC-9-PF-N3-N6_Stateless_Throughput-IPv6 pt:datatype="severity">Sev 3 - Minor</E-5GC-9-PF-N3-N6_Stateless_Throughput-IPv6>
+                        <E-5GC-10-PF-UserPlane-vs-N2-HO-Decoupling pt:datatype="severity">Sev 3 - Minor</E-5GC-10-PF-UserPlane-vs-N2-HO-Decoupling>
                     </test_case_severity>
                     <default_severity pt:datatype="severity">Sev 3 - Minor</default_severity>
                 </parameters>
@@ -54,7 +58,7 @@
                 </item>
                 <item guid="a04cf53e-7295-4035-a29a-2a9beb54b5a0" action="eval" useFieldsInCommand="false">
                     <command>
-                        <body>sev = param(&apos;test_case_severityx/&apos;+tc)</body>
+                        <body>sev = param(&apos;test_case_severity/&apos;+tc)</body>
                     </command>
                     <eventHandlers>
                         <item name="OnInterpreterError">
